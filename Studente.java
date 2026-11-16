@@ -16,7 +16,15 @@ public class Studente {
     private int anno;
     private int nMaterie;
     private int[] voti;
-    
+    /**
+     * 
+     * @param nome: indica il nome dello studente
+     * @param cognome: indica il cognome dello studente
+     * @param indirizzo: indica l'indirizzo dello studente
+     * @param sezione: indica la sezione dello studente
+     * @param anno: indica l'anno dello studente
+     * @param nMaterie: indica il numero di materie dello studente
+     */
     public Studente(String nome, String cognome, String indirizzo, String sezione, int anno, int nMaterie) 
     {
         this.nome = nome;
@@ -28,35 +36,59 @@ public class Studente {
         this.voti = new int[nMaterie];
 
     }
-    
+    /**
+     * 
+     * @return: mi ritorna il voto
+     */
     public int[] getVoti(){
         return this.voti;
     }
-    
+     /**
+     * 
+     * @return: mi ritorna il nome
+     */
     public String getNome() {
         return nome;
     }
-    
+    /**
+     * 
+     * @return: mi ritorna il cognome
+     */
     public String getCognome() {
         return cognome;
     }
-    
+     /**
+     * 
+     * @return: mi ritorna l'indirizzo
+     */
     public String getIndirizzo() {
         return indirizzo;
     }
-    
+    /**
+     * 
+     * @return: mi ritorna la sezione
+     */
     public String getSezione() {
         return sezione;
     }
-    
+    /**
+     * 
+     * @return: mi ritorna l'anno
+     */
      public int getAnno() {
         return anno;
     }
-    
+    /**
+      * 
+      * @return: mi ritorna il numero di materie
+      */
     public int getNMaterie() {
         return nMaterie;
     }
-    
+    /**
+     * 
+     * @return: mi ritorna le insufficienze
+     */
     public int contaInsuff()
     {
         int n=0;
@@ -70,7 +102,11 @@ public class Studente {
         }
         return n;
     }
-    
+    /**
+     * 
+     * @param v: indica il voto dello studente
+     * @return
+     */
     public boolean aggiungiVoto(int v)
     {
         
